@@ -7,8 +7,8 @@ import Messages from './components/Messages/Messages';
 import chatAPI from './services/chatapi';
 import { randomColor } from './utils/common';
 
-
-const SOCKET_URL = 'http://localhost:8080/ws-chat/';
+// const SOCKET_URL = 'http://localhost:8080/ws-chat/';
+const SOCKET_URL = process.env.SOCKET_URL;
 
 const App = () => {
   const [messages, setMessages] = useState([])
